@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Pasta Bella</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    margin:0;
+    background:#fff8f0;
+}
+
+/* Header */
+header{
+    background:#d35400;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:#333;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+}
+
+/* Sections */
+section{
+    padding:20px;
+}
+
+h2{
+    color:#d35400;
+}
+
+/* Gallery */
+.gallery img{
+    width:250px;
+    height:180px;
+    margin:10px;
+    border-radius:10px;
+}
+
+/* Menu Cards */
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px lightgray;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    border-radius:10px;
+}
+
+/* Form */
+form{
+    background:white;
+    padding:20px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 0 10px lightgray;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+}
+
+button{
+    background:#d35400;
+    color:white;
+    border:none;
+    padding:10px;
+    width:100%;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <h1>La Pasta Bella</h1>
+    <p>Welcome to our Italian Restaurant</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#menu">Menu</a>
+    <a href="#reservation">Reservation</a>
+</nav>
+
+<!-- Gallery -->
+<section id="gallery">
+
+    <h2>Restaurant Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
+        
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9">
+        
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+    </div>
+
+</section>
+
+<!-- Menu -->
+<section id="menu">
+
+    <h2>Our Menu</h2>
+
+    <div class="menu">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df">
+            <h3>Veg Pizza</h3>
+            <p>Delicious cheese pizza</p>
+            <h4>₹250</h4>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1625944230945-1b7dd3b949ab">
+            <h3>Chicken Pasta</h3>
+            <p>Italian chicken pasta</p>
+            <h4>₹350</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Reservation Form -->
+<section id="reservation">
+
+    <h2>Book a Table</h2>
+
+    <form>
+
+        <input type="text" placeholder="Enter Name" required>
+
+        <input type="email" placeholder="Enter Email" required>
+
+        <input type="date" required>
+
+        <input type="time" required>
+
+        <select required>
+            <option>Select Guests</option>
+            <option>1 Person</option>
+            <option>2 People</option>
+            <option>4 People</option>
+        </select>
+
+        <button type="submit">Reserve Now</button>
+
+    </form>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 La Pasta Bella Restaurant</p>
+</footer>
+
+</body>
+</html>     
+   
